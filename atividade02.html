@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade02</title>
+</head>
+<body>
+    <h1>Atividade 2</h1>
+    <div id="resul"></div>
+    <script>
+        let nome1=prompt("digite o nome da primeira pessoa");
+        let nome2=prompt("digite o nome da segunda pessoa");
+        let peso1=Number(prompt("fale o peso da(o) " + nome1));
+        let peso2=Number(prompt("fale o peso da (o) " + nome2));
+
+        if(peso1 > peso2){
+            resul = "a pessoa " + nome1 + " é mais pesada, pesando " + peso1 + " kilos";
+        }else{
+            resul = "a pessoa " + nome2 + " é mais pesada " + peso2 + " kilos";
+        }
+
+        document.getElementById("resul").innerHTML = resul;
+    </script>
+</body>
+</html>

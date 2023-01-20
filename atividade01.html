@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 01</title>
+</head>
+<body>
+    <h1>numero</h1>
+    <p>numero1 : <span id= "numero1"><span></p>
+        <p>numero2 : <span id= "numero2"></span></p>
+    <div id="resul"></div>
+    <script> 
+      let numero1 =Number(prompt("Escreva o primeiro número"));
+      let numero2 =Number(prompt("Escreva o segundo número"));
+      let msg;
+
+     
+
+
+      if(numero1 >  numero2){
+      msg = "o primeiro número é maior";
+      }else{ 
+        msg = "o segundo número é maior";
+      }
+    
+
+
+
+   document.getElementById("numero1").innerHTML=numero1;
+   document.getElementById("numero2").innerHTML=numero2;
+   document.getElementById("resul").innerHTML=msg;
+
+
+   </script>
+
+
+
+</body>
+</html>
